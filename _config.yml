@@ -1,0 +1,9 @@
+auto: true
+pygments: true
+regeneration: true
+exclude: /bin
+markdown: kramdown
+permalinks: /:categories/:title
+
+kramdown:
+  entity_output: symbolic

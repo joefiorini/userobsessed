@@ -1,0 +1,184 @@
+/* general --------------------- */
+
+p {
+  font:      1.4em "ff-tisa-web-pro-1","ff-tisa-web-pro-2";
+}
+
+p+p {
+  margin-top: 0.7em;
+}
+
+a {
+  color: #638fb2;
+  padding: 4px 0;
+  text-decoration: none;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition:    all 0.3s ease;
+  -o-transition:      all 0.3s ease;
+  transition:         all 0.3s ease;
+}
+
+a:hover {
+  color: #396482;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:       #222;
+  font-family: "Helvetica Neue", Helvetica, Calibri, Arial;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+h1+p {
+  margin-top: 0.7em;
+}
+
+aside p {
+  color:         #999;
+  font-family:   "ff-tisa-web-pro-1","ff-tisa-web-pro-2";
+  font-size:     1.2em;
+  line-height:   1.3em;
+}
+
+.group:after {
+  visibility: hidden;
+  display:    block;
+  font-size:  0;
+  content:    " ";
+  clear:      both;
+  height:     0;
+}
+
+::selection {
+  background: #ef3e5b;
+  color: white;
+  text-shadow: none;
+}
+
+body {
+  background-image: url('/images/background.png');
+  color:            #666;
+}
+
+section#main {
+  width:     940px;
+  margin:    0 auto;
+  font-size: 67.5%;
+}
+
+/* masthead --------------------- */
+
+section#masthead p {
+  float: left;
+}
+
+section#masthead h1 {
+  font:         italic 2em "ff-tisa-web-pro-1","ff-tisa-web-pro-2";
+  float:        left;
+  padding-top: .75em;
+  text-shadow:  1px 1px 1px rgba(190, 190, 190, 0.6);
+}
+
+section#masthead header img {
+  float:   right;
+  padding: 35px 50px 0 0;
+}
+
+section#masthead header p {
+  font:          600 9em "atrament-web-1", "atrament-web-2";
+  width:         600px;
+  margin-bottom: 45px;
+}
+
+section#masthead header p a {
+  color:           #3a3b40;
+  text-decoration: none;
+}
+
+
+/* content --------------------- */
+
+section#content {
+  float: left;
+  width: 600px;
+}
+
+
+/* sidebar  -------------------- */
+
+section#sidebar {
+  float: right;
+}
+
+section#meta-col1 {
+  float:        left;
+  width:        140px;
+  margin-right: 20px;
+}
+
+section#meta-col2 {
+  float:          right;
+  width:          160px;
+  padding-bottom: 100px;
+}
+
+nav#extra ul li {
+  font-family:    "Helvetica Neue", Helvetica, Calibri, Arial;
+  text-transform: uppercase;
+}
+
+nav#subscribe ul li {
+  padding:  3px 0 5px 28px;
+}
+
+aside {
+  margin-bottom: 65px;
+}
+
+aside:last-child {
+  padding-bottom: 0;
+}
+
+aside header h3, nav header h3 {
+  text-transform: uppercase;
+  font-family:    "Helvetica Neue", Helvetica, Calibri, Arial;
+  font-size:      1.2em;
+  padding-bottom: 15px;
+  letter-spacing: .1em;
+}
+
+nav ul li {
+  font-size:     1.2em;
+  font-family:  "ff-tisa-web-pro-1","ff-tisa-web-pro-2";
+  margin-bottom: 15px;
+  font-size:     1.2em;
+}
+
+li.rss {
+  background-image: url('/images/rss.png');
+  background-repeat: no-repeat;
+}
+
+li.twitter {
+  background-image: url('/images/twitter.png');
+  background-repeat: no-repeat;
+}
+
+aside a, section.meta nav a {
+  color:           #aaa;
+  text-decoration: none;
+  padding:         4px 0px;
+}
+
+section.meta:hover a {
+  color: #71569E;
+}
+
+section.meta:hover a:hover {
+  color: #4D2874;
+}
+
