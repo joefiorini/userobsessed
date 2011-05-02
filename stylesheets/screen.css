@@ -44,6 +44,10 @@ h1+p {
   margin-top: 0.7em;
 }
 
+h2, h3 {
+  text-shadow:   1px 1px 1px #fff;
+}
+
 aside p {
   color:         #999;
   font-family:   "ff-tisa-web-pro-1","ff-tisa-web-pro-2";
@@ -216,6 +220,10 @@ section#posts ol:first-child > li:last-child {
   margin-bottom: 0;
 }
 
+article a {
+  text-shadow: 1px 1px white;
+}
+
 article p+p, article p+blockquote, article p+ul,
 article p+ol, article ul+p, article ol+p,
 article blockquote+p {
@@ -369,6 +377,10 @@ section#footer footer nav {
   padding-top: 5px;
 }
 
+section#footer footer nav a {
+  text-shadow: 1px 1px white;
+}
+
 section#footer footer p.copyright {
   float: right;
   width: 30.75%;
@@ -378,7 +390,7 @@ section#footer footer p.copyright {
 /* page  ----------------------- */
 
 section#content h2 {
-  font-size: 2em;
+  font-size:     2em;
   margin-bottom: 25px;
 }
 
