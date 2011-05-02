@@ -20,7 +20,6 @@ a {
   -webkit-transition: all 0.3s ease;
   -moz-transition:    all 0.3s ease;
   -o-transition:      all 0.3s ease;
-  transition:         all 0.3s ease;
 }
 
 a:hover {
@@ -100,7 +99,7 @@ section#masthead h1 {
   width:       30.75%;
   text-align:  right;
   padding-top: .75em;
-  text-shadow: 1px 1px 1px rgba(190, 190, 190, 0.6);
+  text-shadow: 1px 1px rgba(190, 190, 190, 0.6);
 }
 
 section#masthead header img {
@@ -121,10 +120,9 @@ section#masthead header p a {
   text-shadow:        1px 1px 1px #aaa;
   text-decoration:    none;
 
-  -webkit-transition: none;
-  -moz-transition:    none;
-  -o-transition:      none;
-  transition:         none;
+  -webkit-transition-duration: 0;
+  -moz-transition-duration:    0;
+  -o-transition-duration:      0;
 }
 
 
@@ -218,8 +216,14 @@ section#posts ol:first-child > li:last-child {
   margin-bottom: 0;
 }
 
-article p+p, article p+blockquote {
+article p+p, article p+blockquote, article p+ul,
+article p+ol, article ul+p, article ol+p,
+article blockquote+p {
   margin-top: 1em;
+}
+
+article p+h2, article p+h3, article p+h4 {
+  margin-top: 1.4em;
 }
 
 article header h2 {
@@ -315,7 +319,6 @@ article footer p time {
   -webkit-transition: all 0.3s ease;
   -moz-transition:    all 0.3s ease;
   -o-transition:      all 0.3s ease;
-  transition:         all 0.3s ease;
 
 }
 
@@ -370,4 +373,25 @@ section#footer footer p.copyright {
   float: right;
   width: 30.75%;
   text-align: right;
+}
+
+/* page  ----------------------- */
+
+section#content h2 {
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+section#content h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+p+h3 {
+  margin-top: 0.7em;
+}
+
+section#content ul li {
+  list-style: square inside;
+  font-size: 1.4em;
 }
