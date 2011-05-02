@@ -163,6 +163,7 @@ nav#extra ul li, nav#site ul li {
 
 .icon {
   padding:  3px 0 5px 28px;
+  background-repeat: no-repeat;
 }
 
 aside {
@@ -194,12 +195,10 @@ aside a, section.meta nav a {
 
 section.meta:hover li.twitter {
   background-image: url('/images/twitter.png');
-  background-repeat: no-repeat;
 }
 
 section.meta:hover li.rss {
   background-image: url('/images/rss.png');
-  background-repeat: no-repeat;
 }
 
 section.meta:hover a {
@@ -305,9 +304,16 @@ article footer:hover p a {
   color: #71569E;
 }
 
-article footer:hover p a {
+article footer:hover p a[rel~=external] {
+  background-image: url('/images/source.png');
+}
+
+article footer p a[rel~=alternate] {
+  padding-top: 0;
+}
+
+article footer:hover p a[rel~=alternate] {
   background-image: url('/images/read-later.png');
-  background-repeat: no-repeat;
 }
 
 article footer:hover p time {
@@ -328,10 +334,6 @@ article footer p time {
   -moz-transition:    all 0.3s ease;
   -o-transition:      all 0.3s ease;
 
-}
-
-article footer p a.icon {
-  padding-top: 0;
 }
 
 article footer p a {

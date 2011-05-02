@@ -17,7 +17,11 @@
         {% capture date_format %}%A, %B %e{% endcapture %}
       {% endif %}
       <time pubdate datetime="{{ post.date | date: '%Y-%m-%dT%I:%M%z' }}">{{ post.date | date: date_format }}</time>
-      <a class="icon" href="http://www.instapaper.com/hello2?u={{ post.url }}">Read Later</a>
+      {% if post.source %}
+        <a class="icon" href="{{ post.source }}" title="{{ post.title }}" rel="external">Source</a>
+      {% else %}
+        <a class="icon" href="http://www.instapaper.com/hello2?u={{ post.url }}" rel="alternate" title="Save to Instapaper">Read Later</a>
+      {% endif %}
     </p>
   </footer>
 </article>
