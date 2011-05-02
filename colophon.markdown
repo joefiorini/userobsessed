@@ -19,8 +19,6 @@ User Obsessed is designed, written and built by Joe Fiorini.
 - Writing done on Mac using [Scrivener] and on the iPhone/iPad in [Notesy][] and [Nebulous Notes][nebulous] (synced via Dropbox)
 - Hosted on [...][]
 
-This site is built using web standards. The markup [validates HTML5 compliant][html5] and the CSS [is valid CSS3][css3]. The feed is [valid Atom].
-
 [tisa]: http://typekit.com/fonts/ff-tisa-web-pro
 [TypeKit]: http://typekit.com/
 [Helvetica]: http://www.helveticafilm.com/
