@@ -1,5 +1,5 @@
 ---
-title: Review - Authoring eBooks
+title: Review - Authoring eBooks by Jeremy McAnally
 layout: post
 category: [reviews]
 ---
