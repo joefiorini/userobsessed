@@ -1,5 +1,5 @@
 ---
-title: Shopfiy Developer Tools
+title: Shopify Developer Tools
 date: 2011-01-19
 category: tips-and-tricks
 layout: post
