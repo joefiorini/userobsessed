@@ -28,7 +28,7 @@ After that I started using "select all/copy & paste" instead. Huge pain. What I 
 
 (See <https://gist.github.com/787359> for the latest version of this script).
 
-### Usage:
+### Usage
 
 1. Create a new directory for your Shopify app.
 2. Create a directory called templates to store your Liquid templates.

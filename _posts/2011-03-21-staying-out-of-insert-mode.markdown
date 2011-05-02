@@ -14,7 +14,7 @@ category: tips-and-tricks
 
 The best way I've found to use Vim is to enter insert mode for short bursts of typing and quickly going back to normal mode. Not only is normal mode most powerful, but I also get a more finite (and predictable) undo history.
 
-> There are two other ways to get out of in­sert mode:
+> There are two other ways to get out of insert mode:
 > 
 > Ctrl-\[
 > 
@@ -24,5 +24,7 @@ The best way I've found to use Vim is to enter insert mode for short bursts of t
 
 I use Ctrl-C to exit insert mode. One thing I discovered is that Ctrl-C cancels any pending edits. 90% of the time this is not a problem for me. However, for that last 10%, I've added this to my `.vimrc`:
 
+{% highlight vim %}
     inoremap <C-c> <ESC>
+{% endhighlight %}
 
