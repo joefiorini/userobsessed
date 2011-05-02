@@ -5,7 +5,6 @@
   padding: .5em 1.5em;
   margin: 1em 3em;
   width: 500px;
-  float: left;
 }
 
 
@@ -17,6 +16,7 @@ code {
   text-align: left;
   font-size: 1.25em;
   font-family: "adaptive-mono-1","adaptive-mono-2", monospace;
+  line-height: 1.4em;
 }
 
 .highlight .hll { background-color: #ffffcc }
