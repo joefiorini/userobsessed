@@ -3,7 +3,8 @@ pygments: true
 regeneration: true
 exclude: /bin
 markdown: kramdown
-permalinks: /:categories/:title
+permalink: pretty
+paginate: 10
 
 kramdown:
   entity_output: symbolic
