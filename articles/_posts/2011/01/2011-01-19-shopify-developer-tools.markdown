@@ -3,6 +3,7 @@ title: Shopfiy Developer Tools
 date: 2011-01-19
 layout: post
 category: tips-and-tricks
+layout: post
 ---
 
 I have done a bit of [Shopify](http://www.shopify.com) development since starting [densitypop](http://blog.densitypop.com). When I build Ruby on Rails apps, I can run the site locally to test my work before I commit it. Since Shopify is a hosted service, this is much more difficult. In the past I used [Vision](http://vision.shopify.com/), a tool that emulates the Shopify backend through data fixtures and a server written in Ruby. It worked great until Shopify stopped updating it. Now, [according to the wiki](http://wiki.shopify.com/Vision#Vision_Troubleshooting), Vision lacks a lot of features that help make development and maintainance much easier. As far as I'm concerned, it's dead.
