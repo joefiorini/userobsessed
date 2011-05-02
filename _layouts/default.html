@@ -1,12 +1,13 @@
 <html>
   <head>
-    <title>Building software for people: User Obsessed</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}User Obsessed: On building software for people</title>
     <script type="text/javascript" src="http://use.typekit.com/jjw2jrj.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <link type="text/css" rel="stylesheet" href="/stylesheets/reset.css">
     <link type="text/css" rel="stylesheet" href="/stylesheets/screen.css">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/code.css">
   </head>
-  <body>
+  <body class="{{ page.name }}">
 
     <section id="main">
 
@@ -14,72 +15,94 @@
         <header class="group">
           <p><a href="/">User<br>Obsessed</a></p>
           <h1>On building software for people</h1>
-          <img src="/images/uo-logo.png" width="84" height="123">
+          <img src="/images/uo-logo.png">
         </header>
       </section>
 
-      <section id="content" class="group">
-        {{ content }}
+      <section id="focus" class="group">
+
+        <section id="content" class="group">
+          {{ content }}
+        </section>
+
+        <section id="sidebar">
+
+          <section id="meta-col1" class="meta group">
+            <aside id="about">
+              <header>
+                <h3>About</h3>
+              </header>
+              <p>
+                User Obsessed is a blog that explores the role developers play in defining the way users experience software. <a href="/about">See more.</a>
+              </p>
+            </aside>
+
+            <aside>
+              <header>
+                <h3>Stay up to date</h3>
+              </header>
+              <nav id="subscribe">
+                <ul id="subscribe">
+                  <li class="icon rss"><a href="#feedburner">RSS</a></li>
+                  <li class="icon twitter"><a href="#twitter">Twitter</a></li>
+                  <li class="icon"><a href="/subscribe">More</a></li>
+                </ul>
+              </nav>
+            </aside>
+
+            <aside id="ads">
+            <p>
+              <a href="/reviews/authoring-ebooks.html">
+                <img src="/images/authoring-ebooks-ad.png">
+              </a>
+            </p>
+            </aside>
+
+          </section>
+
+          <section id="meta-col2" class="meta group">
+
+            <aside id="bio">
+              <header>
+                <h3>The Author</h3>
+              </header>
+              <p>
+              My name is Joe Fiorini. I am a web developer from Cleveland, Ohio. I work for <a href="http://leandog.com">LeanDog Software</a> where I build software using <a href="http://www.rubyonrails.org">Ruby on Rails</a>. <a href="/bio">See more.</a>
+              </p>
+            </aside>
+
+            <aside>
+              <nav id="extra">
+                <ul>
+                  <li><a href="/archive">Archive</a></li>
+                  <li><a href="/contact">Contact</a></li>
+                </ul>
+              </nav>
+            </aside>
+
+          </section>
+
+        </section>
+
       </section>
 
-      <section id="sidebar">
-
-        <section id="meta-col1" class="meta group">
-          <aside id="about">
-            <header>
-              <h3>About</h3>
-            </header>
-            <p>
-              User Obsessed is a blog that explores the role developers play in defining the way users experience software. <a href="/about">See more.</a>
-            </p>
-          </aside>
-          <aside id="bio">
-            <header>
-              <h3>The Author</h3>
-            </header>
-            <p>
-            My name is Joe Fiorini. I am a web developer from Cleveland, Ohio. I work for <a href="http://leandog.com">LeanDog Software</a> where I build software using <a href="http://www.rubyonrails.org">Ruby on Rails</a>. <a href="/bio">See more.</a>
-            </p>
-          </aside>
-
-          <aside id="ads">
-          <p>
-            <a href="/reviews/authoring-ebooks.html">
-              <img src="/images/authoring-ebooks-ad.png">
-            </a>
+      <section id="footer" class="group">
+        <footer class="group">
+          <nav id="site">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/archive">Archive</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/subscribe">Subscribe</a></li>
+              <li><a href="/colophon">Colophon</a></li>
+            </ul>
+          </nav>
+          <p class="copyright">
+            &copy;2011 &ndash; Joe Fiorini
           </p>
-          </aside>
-
-        </section>
-
-        <section id="meta-col2" class="meta group">
-
-          <aside>
-            <header>
-              <h3>Stay up to date</h3>
-            </header>
-            <nav id="subscribe">
-              <ul id="subscribe">
-                <li class="rss"><a href="#feedburner">RSS</a></li>
-                <li class="twitter"><a href="#twitter">Twitter</a></li>
-                <li><a href="/subscribe">More</a></li>
-              </ul>
-            </nav>
-          </aside>
-
-          <aside>
-            <nav id="extra">
-              <ul>
-                <li><a href="/archive">Archive</a></li>
-                <li><a href="/contact">Contact</a></li>
-              </ul>
-            </nav>
-          </aside>
-
-        </section>
-
+        </footer>
       </section>
-
 
     </section>
 

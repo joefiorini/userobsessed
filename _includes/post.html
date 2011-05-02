@@ -1,0 +1,17 @@
+<article>
+  <header>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  </header>
+  {% if content %}
+    {{ content }}
+  {% else %}
+    {{ post.content }}
+  {% endif %}
+  <footer class="group">
+    <p>
+      <time pubdate datetime="2011-04-20T11:22Z">Wednesday, April 20</time>
+      <a class="icon" href="http://www.instapaper.com/hello2?u={{ post.url }}">Read Later</a>
+    </p>
+  </footer>
+</article>
+
