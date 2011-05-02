@@ -3,6 +3,7 @@ Date: March 22, 2011
 source: http://programming-motherfucker.com/
 title: Zed Shaw likes to write code, go figure...
 layout: post
+category: process
 ---
 
 > We are tired of XP, Scrum, Kanban, Waterfall, and anything else getting in the way of...Programming, Motherfucker.

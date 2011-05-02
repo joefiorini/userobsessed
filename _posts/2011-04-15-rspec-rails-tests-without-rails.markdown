@@ -3,6 +3,7 @@ date: April 15, 2011
 title: Running RSpec Rails Tests - Without Rails
 source: http://www.adomokos.com/2011/04/running-rails-rspec-tests-without-rails.html
 layout: post
+category: productivity
 ---
 
 > The application was a little light on tests, so I asked the other developers why they are not writing more specs? The answer was all too familiar: "it just takes forever to run them". Yup, Rails had to load up, schema needed to be verified, the entire universe had to be included and 30 seconds later our specs were executed.

@@ -3,6 +3,7 @@ date: April 17, 2010
 source: http://www.slideshare.net/orderedlist/designing-code
 title: Designing Code
 layout: post
+category: user-experience
 ---
 
 [Steve Smith](http://www.orderedlist.com/) gave a great talk at [Great Lakes Ruby Bash](http://www.greatlakesrubybash.com/) on designing code. Not MVC vs. MVP vs. insert your architecture here, but applying visual design techniques to your code. This was very poignant for me with my recent interest in learning visual design. I try to make my code as easy to look at as possible. Steve gave some extremely useful advice such as:

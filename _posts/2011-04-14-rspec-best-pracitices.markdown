@@ -3,6 +3,7 @@ date: April 14, 2011
 title: RSpec Best Practices
 source: http://www.methodsandtools.com/tools/tools.php?rspec
 layout: post
+category: testing
 ---
 
 > RSpec is a great tool in the behavior driven design process of writing human readable specifictions that direct and validate the development of your application.

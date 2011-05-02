@@ -3,6 +3,7 @@ Date: March 17, 2010
 title: Toyota's Journey from Waterfall to Lean Software Development
 source: http://blog.crisp.se/henrikkniberg/2010/03/16/1268757660000.html
 layout: post
+category: process
 ---
 
 Toyota is known for their manufacturing process. People have [studied] [1] and [emulated] [2] it for years. Recently [Mary and Tom Poppendieck] [3] brought it to [software development] [4].

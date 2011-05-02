@@ -1,7 +1,7 @@
 ---
-date: January 13, 2011
-title: Review: Authoring eBooks
+title: Review - Authoring eBooks
 layout: post
+category: [reviews]
 ---
 
 TL;DR [Buy it] [1]

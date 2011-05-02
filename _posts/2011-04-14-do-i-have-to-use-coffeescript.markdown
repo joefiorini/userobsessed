@@ -3,6 +3,7 @@ date: April 17, 2011
 title: Do I have to use CoffeScript?
 source: http://doihavetousecoffeescriptinrails.com/
 layout: post
+category: productivity
 ---
 
 > Rails is going to force you to use coffeescript in an upcoming version and there's nothing you can do about it.

@@ -1,7 +1,6 @@
 ---
 title: Shopfiy Developer Tools
 date: 2011-01-19
-layout: post
 category: tips-and-tricks
 layout: post
 ---

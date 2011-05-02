@@ -3,6 +3,7 @@ Date: March 21, 2011
 source: http://cloudhead.io/2010/04/24/staying-the-hell-out-of-insert-mode/
 title: Alexis Sellier on Vim's insert mode
 layout: post
+category: tips-and-tricks
 ---
 
 > Insert mode is vi's weakest mode. In this mode, it's no better than any other
