@@ -26,6 +26,7 @@
         &lt;p&gt;&lt;a href='{{ site.url }}{{ post.url }}'&gt; ☺ Source&lt;/a&gt;&lt;/p&gt;
       {% endif %}
     </content>
+  </entry>
   {% endfor %}
 </feed>
 
