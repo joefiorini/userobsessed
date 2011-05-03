@@ -1,8 +1,6 @@
 url: "http://userobsessed.net"
-auto: true
 pygments: true
-regeneration: true
-exclude: /bin
+exclude: [/bin, Gemfile, Gemfile.lock]
 markdown: kramdown
 permalink: pretty
 paginate: 10

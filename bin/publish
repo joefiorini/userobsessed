@@ -1,0 +1,26 @@
+#!/bin/bash
+
+SERVER_DIRECTORY="joe@userobsessed:/var/www/userobsessed.net/"
+
+# Die if there's any errors
+set -e
+
+main() {
+ clear_out_site_dir
+ generate_html
+ rsync_publish_changes
+}
+
+clear_out_site_dir() {
+  rm -rf _site
+}
+
+generate_html() {
+  jekyll --no-server
+}
+
+rsync_publish_changes() {
+  rsync --delete -av ./_site/ $SERVER_DIRECTORY
+}
+
+main
