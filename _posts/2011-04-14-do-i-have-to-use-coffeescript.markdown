@@ -1,6 +1,6 @@
 ---
 date: April 17, 2011
-title: Do I have to use CoffeScript?
+title: Do I have to use CoffeeScript?
 source: http://doihavetousecoffeescriptinrails.com/
 layout: post
 category: productivity
