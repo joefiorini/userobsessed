@@ -1,6 +1,6 @@
-<article>
+<article class="instapaper_body">
   <header>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h2 class="instapaper_title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
   </header>
   {% if content %}
     {{ content }}
@@ -20,7 +20,7 @@
       {% if post.source %}
         <a class="icon" href="{{ post.source }}" title="{{ post.title }}" rel="external">Source</a>
       {% else %}
-        <a class="icon" href="http://www.instapaper.com/hello2?u={{ site.url }}{{ post.url }}" rel="alternate" title="Save to Instapaper">Read Later</a>
+      <a class="icon" href="http://www.instapaper.com/hello2?u={{ site.url }}{{ post.url }}&title={{ post.title | url_encode }}" rel="alternate" title="Save to Instapaper">Read Later</a>
       {% endif %}
     </p>
   </footer>
