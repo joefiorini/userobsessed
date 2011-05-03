@@ -1,0 +1,49 @@
+#!/bin/bash
+
+set -e
+
+slugify() {
+   echo "$*" | ruby -e 'puts gets.chomp.gsub(/\W+/, "-").downcase'
+}
+
+
+YEAR=`date +%Y`
+MONTH=`date +%m`
+DAY=`date +%d`
+
+title="$*"
+slug=`slugify "$title"`
+dest="_posts/$YEAR-$MONTH-$DAY-$slug.markdown"
+
+LINKED_TEMPLATE="---
+date: `date +"%m/%d/%Y %H:%M %p"`
+title: $title
+source: 
+layout: post
+category: 
+---
+
+"
+
+main() {
+  assert_title_was_given
+  create_template_file
+  open_in_vim
+}
+
+assert_title_was_given() {
+  if [ -z $title ]; then
+    echo "No slug given!"
+    return 1
+  fi
+}
+
+create_template_file() {
+  echo "$LINKED_TEMPLATE" > $dest
+}
+
+open_in_vim() {
+  $EDITOR $dest
+}
+
+main
