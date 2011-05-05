@@ -16,7 +16,7 @@ slug=`slugify "$title"`
 dest="_posts/$YEAR-$MONTH-$DAY-$slug.markdown"
 
 LINKED_TEMPLATE="---
-date: `date +"%m/%d/%Y %H:%M %p"`
+date: `date +"%Y-%m-%d %H:%M %p"`
 title: $title
 source: 
 layout: post
