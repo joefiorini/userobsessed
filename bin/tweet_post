@@ -1,0 +1,62 @@
+#!/usr/bin/env ruby
+
+require 'twitter'
+require 'jekyll'
+require 'ostruct'
+
+def escape(url)
+  require 'uri'
+  CGI::escape(URI.escape(url))
+end
+
+def fail_if_tweet_too_long(tweet)
+  if tweet.length > 140
+    $STDERR.puts "Sorry, I won't post a tweet that's #{tweet.length - 140} characters too long."
+  end
+end
+
+def config
+  YAML.load_file(File.dirname(__FILE__) + '/social_config.yml')
+end
+
+def twitter_config
+  @twitter_config ||= OpenStruct.new(config['twitter'])
+end
+
+def bitly_config
+  @bitly_config ||= OpenStruct.new(config['bitly'])
+end
+
+path_to_post = ARGV[0]
+site = Jekyll::Site.new(Jekyll.configuration({}))
+post = Jekyll::Post.new(site, '.', '', File.basename(path_to_post))
+
+exit unless post.data.key? 'tweet'
+
+tweet = post.data['tweet']
+
+fail_if_tweet_too_long(tweet)
+
+Twitter.configure do |config|
+  config.consumer_key       = twitter_config.consumer_key
+  config.consumer_secret    = twitter_config.consumer_secret
+  config.oauth_token        = twitter_config.oauth_token
+  config.oauth_token_secret = twitter_config.oauth_token_secret
+end
+
+url_to_post = site.config['url'] + post.url
+
+bitly_key = bitly_config.api_key
+bitly_url = "http://api.bitly.com/v3/shorten?login=joefiorini&apiKey=#{bitly_key}&longUrl=#{escape(url_to_post)}&format=txt"
+shortened_url = `curl "#{bitly_url}" 2> /dev/null`
+
+tweet << " #{shortened_url}"
+
+fail_if_tweet_too_long(tweet)
+
+puts "Tweeting:\n\n"
+puts tweet
+puts "\nIs this okay? (Y/N):"
+choice = STDIN.gets.chomp.downcase
+
+Twitter.update(tweet) if choice == "y"

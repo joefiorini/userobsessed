@@ -1,3 +1,4 @@
 /_site
 /_published
 .DS_Store
+bin/social_config.yml
