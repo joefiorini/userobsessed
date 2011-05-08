@@ -88,6 +88,7 @@ section#main {
   max-width: 1140px;
   min-width: 755px;
   margin:    0 auto;
+  padding:   0 25px;
   font-size: 67.5%;
 }
 
@@ -100,7 +101,7 @@ section#masthead p {
 section#masthead h1 {
   font:        italic 2em "ff-tisa-web-pro-1","ff-tisa-web-pro-2";
   float:       left;
-  width:       30.75%;
+  width:       39.45%;
   text-align:  right;
   padding-top: .75em;
   text-shadow: 1px 1px rgba(190, 190, 190, 0.6);
@@ -113,10 +114,9 @@ section#masthead header img {
 
 section#masthead header p {
   font:          600 9em "atrament-web-1", "atrament-web-2";
-  width:         65.4%;
+  width:         57.5%;
   margin-bottom: 45px;
   line-height:   .9em;
-  margin-right:  3.8%;
 }
 
 section#masthead header p a {
@@ -145,16 +145,17 @@ section#sidebar {
   width: 30.75%;
 }
 
-section#meta-col1 {
-  float:        left;
-  margin-right: 20px;
+section.meta {
+  float: left;
   width: 42%;
 }
 
+section#meta-col1 {
+  margin-right: 20px;
+}
+
 section#meta-col2 {
-  float:          right;
   padding-bottom: 100px;
-  width: 42%;
 }
 
 nav#extra ul li, nav#site ul li {
@@ -409,4 +410,11 @@ p+h3 {
 section#content ul li {
   list-style: square inside;
   font-size: 1.4em;
+}
+
+@media screen and (max-width: 800px) {
+
+  section.meta {
+    float: none;
+  }
 }
