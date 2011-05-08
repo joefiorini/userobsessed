@@ -134,7 +134,7 @@ section#masthead header p a {
 
 section#content {
   float: left;
-  width: 600px;
+  width: 65.4%;
 }
 
 
@@ -142,18 +142,19 @@ section#content {
 
 section#sidebar {
   float: right;
+  width: 30.75%;
 }
 
 section#meta-col1 {
   float:        left;
-  width:        140px;
   margin-right: 20px;
+  width: 42%;
 }
 
 section#meta-col2 {
   float:          right;
-  width:          160px;
   padding-bottom: 100px;
+  width: 42%;
 }
 
 nav#extra ul li, nav#site ul li {
