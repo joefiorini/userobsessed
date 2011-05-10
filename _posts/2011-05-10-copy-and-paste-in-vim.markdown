@@ -6,6 +6,8 @@ category: tips-and-tricks
 tweet: Make pasting text in command line Vim suck less.
 ---
 
+<ins datetime="2011-05-10T04:59+0000">UPDATE: There is great discussion going on about pasting in Vim on Hacker News. [Join the conversation][hn] if you have questions or thoughts.</ins>
+
 I like using Vim <del datetime="2011-05-10T02:32+0000">on the command line</del> <ins datetime="2011-05-10T02:32+0000">in a terminal emulator</ins>[^1] rather than through a GUI. I'm a fairly distracted person, and I've found that a strong single-tasking workflow helps me stay focused. Most of my day is spent in one terminal window with one browser window open.
 
 ### The problem
@@ -62,6 +64,7 @@ That should give you a good excuse to get familiar with Vim's [`:help`][help] co
 
 [help]: http://vimdoc.sourceforge.net/htmldoc/help.html
 [google]: http://bit.ly/lnA8oD
+[hn]: http://news.ycombinator.com/item?id=2532350
 
 *[N.B.]: Note well
 
