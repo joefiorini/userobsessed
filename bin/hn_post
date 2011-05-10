@@ -12,6 +12,6 @@ site = Jekyll::Site.new(Jekyll.configuration({}))
 post = Jekyll::Post.new(site, '.', '', File.basename(path_to_post))
 
 title = post.data['title']
-url   = post.data['source'] || post.url
+url   = post.data['source'] || site.config['url'] + post.url
 
 `open "http://news.ycombinator.com/submitlink?u=#{escape(url)}&t=#{escape(title)}"`
