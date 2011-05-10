@@ -48,6 +48,11 @@ h2, h3 {
   text-shadow:   1px 1px 1px #fff;
 }
 
+sup {
+  vertical-align: super;
+  font-size: .5em;
+}
+
 aside p {
   color:         #999;
   font-family:   "ff-tisa-web-pro-1","ff-tisa-web-pro-2";

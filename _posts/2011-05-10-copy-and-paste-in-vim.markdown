@@ -1,16 +1,16 @@
 ---
 date: 2011-05-10 00:12 AM
-title: Pasting in command line Vim
+title: Pasting in terminal Vim
 layout: post
 category: tips-and-tricks
 tweet: Make pasting text in command line Vim suck less.
 ---
 
-I like using Vim on the command line rather than through a GUI. I'm a fairly distracted person, and I've found that a strong single-tasking workflow helps me stay focused. Most of my day is spent in one terminal window with one browser window open.
+I like using Vim <del datetime="2011-05-10T02:32+0000">on the command line</del> <ins datetime="2011-05-10T02:32+0000">in a terminal emulator</ins>[^1] rather than through a GUI. I'm a fairly distracted person, and I've found that a strong single-tasking workflow helps me stay focused. Most of my day is spent in one terminal window with one browser window open.
 
 ### The problem
 
-Unfortunately, pasting in command-line Vim sucks. When I paste a nicely formatted block of Ruby code I end up with something like this:
+Unfortunately, pasting in <del datetime="2011-05-10T02:32+0000">command-line</del> <ins datetime="2011-05-10T02:32+0000">terminal</ins> Vim sucks. When I paste a nicely formatted block of Ruby code I end up with something like this:
 
 {% highlight ruby %}
 
@@ -64,3 +64,5 @@ That should give you a good excuse to get familiar with Vim's [`:help`][help] co
 [google]: http://bit.ly/lnA8oD
 
 *[N.B.]: Note well
+
+[^1]: Updated to clarify what I mean by "command-line" Vim
