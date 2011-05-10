@@ -13,4 +13,4 @@ Or, if you prefer email you can [sign up for email updates][email].
 [reader]:    http://reader.google.com
 [reeder]:    http://reederapp.com/
 [twitter]:   http://twitter.com/userobsessed
-[email]:     blah
+[email]:     http://feedburner.google.com/fb/a/mailverify?uri=UserObsessed&loc=en_US
