@@ -78,6 +78,11 @@ q:after {
   text-shadow: none;
 }
 
+abbr[title*="Note well"] {
+  font-family:    "Helvetica Neue", Helvetica, Calibri, Arial;
+  font-weight: bold;
+}
+
 body {
   background-image: url('/images/background.png');
   color:            #666;
