@@ -1,7 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    kramdown (0.13.2)
+    kramdown (0.13.3)
 
 PLATFORMS
   ruby

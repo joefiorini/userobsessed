@@ -6,13 +6,13 @@ category: tips-and-tricks
 tweet: Make pasting text in command line Vim suck less.
 ---
 
-<ins datetime="2011-05-10T04:59+0000">UPDATE: There is great discussion going on about pasting in Vim on Hacker News. [Join the conversation][hn] if you have questions or thoughts.</ins>
+<ins datetime="{{ "2011-05-10 04:59 +00:00" | html_date }}">UPDATE: There is great discussion going on about pasting in Vim on Hacker News. [Join the conversation][hn] if you have questions or thoughts.</ins>
 
-I like using Vim <del datetime="2011-05-10T02:32+0000">on the command line</del> <ins datetime="2011-05-10T02:32+0000">in a terminal emulator</ins>[^1] rather than through a GUI. I'm a fairly distracted person, and I've found that a strong single-tasking workflow helps me stay focused. Most of my day is spent in one terminal window with one browser window open.
+I like using Vim <del datetime="{{ "2011-05-10 02:32 +00:00" | html_date }}">on the command line</del> <ins datetime="{{ "2011-05-10 02:32 +00:00" | html_date }}">in a terminal emulator</ins>[^1] rather than through a GUI. I'm a fairly distracted person, and I've found that a strong single-tasking workflow helps me stay focused. Most of my day is spent in one terminal window with one browser window open.
 
 ### The problem
 
-Unfortunately, pasting in <del datetime="2011-05-10T02:32+0000">command-line</del> <ins datetime="2011-05-10T02:32+0000">terminal</ins> Vim sucks. When I paste a nicely formatted block of Ruby code I end up with something like this:
+Unfortunately, pasting in <del datetime="{{ "2011-05-10 02:32 +00:00" | html_date }}">command-line</del> <ins datetime="{{ "2011-05-10 02:32 +00:00" | html_date }}">terminal</ins> Vim sucks. When I paste a nicely formatted block of Ruby code I end up with something like this:
 
 {% highlight ruby %}
 

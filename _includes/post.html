@@ -16,7 +16,7 @@
       {% else %}
         {% capture date_format %}%A, %B %e{% endcapture %}
       {% endif %}
-      <time pubdate datetime="{{ post.date | date: '%Y-%m-%dT%I:%M%z' }}">{{ post.date | date: date_format }}</time>
+      <time pubdate datetime="{{ post.date | html_date }}">{{ post.date | date: date_format }}</time>
       {% if post.source %}
         <a class="icon" href="{{ post.source }}" title="{{ post.title }}" rel="external">Source</a>
       {% else %}
