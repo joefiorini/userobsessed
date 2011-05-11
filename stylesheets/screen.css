@@ -60,6 +60,10 @@ aside p {
   line-height:   1.3em;
 }
 
+del {
+  display: none;
+}
+
 q:before {
   content: "\201C";
 }
