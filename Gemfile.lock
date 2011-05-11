@@ -1,10 +1,29 @@
+GIT
+  remote: https://github.com/joefiorini/kramdown.git
+  revision: ef7011229e7d93c31c22468e5cfd797051ac280c
+  specs:
+    kramdown (0.13.3)
+
 GEM
   remote: http://rubygems.org/
   specs:
-    kramdown (0.13.3)
+    classifier (1.3.3)
+      fast-stemmer (>= 1.0.0)
+    directory_watcher (1.4.0)
+    fast-stemmer (1.0.0)
+    jekyll (0.10.0)
+      classifier (>= 1.3.1)
+      directory_watcher (>= 1.1.1)
+      liquid (>= 1.9.0)
+      maruku (>= 0.5.9)
+    liquid (2.2.2)
+    maruku (0.6.0)
+      syntax (>= 1.0.0)
+    syntax (1.0.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  kramdown
+  jekyll
+  kramdown (= 0.13.3)!

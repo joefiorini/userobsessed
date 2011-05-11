@@ -43,7 +43,17 @@ module RevisionTags
     DateTime.parse(date)
   end
 
+  module GlobalDateFilter
+
+    def html_global_date(date)
+      RevisionTags.html_global_date(date)
+    end
+
+  end
+
 end
 
 Liquid::Template.register_tag 'inserted', RevisionTags::InsertedTag
 Liquid::Template.register_tag 'deleted', RevisionTags::DeletedTag
+
+Liquid::Template.register_filter(RevisionTags::GlobalDateFilter)
