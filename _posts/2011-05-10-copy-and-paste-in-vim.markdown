@@ -6,13 +6,15 @@ category: tips-and-tricks
 tweet: Make pasting text in command line Vim suck less.
 ---
 
-<ins datetime="{{ "2011-05-10 04:59 +00:00" | html_date }}">UPDATE: There is great discussion going on about pasting in Vim on Hacker News. [Join the conversation][hn] if you have questions or thoughts.</ins>
+{% inserted 2011-05-10 01:59 PM %}
+UPDATE: There is great discussion going on about pasting in Vim on Hacker News. [Join the conversation][hn] if you have questions or thoughts.
+{% endinserted %}
 
-I like using Vim <del datetime="{{ "2011-05-10 02:32 +00:00" | html_date }}">on the command line</del> <ins datetime="{{ "2011-05-10 02:32 +00:00" | html_date }}">in a terminal emulator</ins>[^1] rather than through a GUI. I'm a fairly distracted person, and I've found that a strong single-tasking workflow helps me stay focused. Most of my day is spent in one terminal window with one browser window open.
+I like using Vim {% deleted 2011-05-10 10:32 AM %}on the command line{% enddeleted %} {% inserted 2011-05-10 10:32 AM %}in a terminal emulator{% endinserted %}[^1] rather than through a GUI. I'm a fairly distracted person, and I've found that a strong single-tasking workflow helps me stay focused. Most of my day is spent in one terminal window with one browser window open.
 
 ### The problem
 
-Unfortunately, pasting in <del datetime="{{ "2011-05-10 02:32 +00:00" | html_date }}">command-line</del> <ins datetime="{{ "2011-05-10 02:32 +00:00" | html_date }}">terminal</ins> Vim sucks. When I paste a nicely formatted block of Ruby code I end up with something like this:
+Unfortunately, pasting in {% deleted 2011-05-10 10:32 AM %}command-line{% enddeleted %} {% inserted 2011-05-10 10:32 AM %}terminal{% endinserted %} Vim sucks. When I paste a nicely formatted block of Ruby code I end up with something like this:
 
 {% highlight ruby %}
 
