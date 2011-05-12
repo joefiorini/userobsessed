@@ -16,7 +16,7 @@ clear_out_site_dir() {
 }
 
 generate_html() {
-  jekyll --no-server
+  bundle exec jekyll --no-server
 }
 
 rsync_publish_changes() {
