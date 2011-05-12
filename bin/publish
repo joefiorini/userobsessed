@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SERVER_DIRECTORY="joe@userobsessed:/var/www/userobsessed.net/"
+SERVER_DIRECTORY="userobsessed:/var/www/userobsessed.net/"
 
 # Die if there's any errors
 set -e
