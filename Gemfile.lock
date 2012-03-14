@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/joefiorini/s3deployer
-  revision: d3c3d076cd8194c1c7a9024b788d37cbdf3d7ec8
+  revision: 5a4e9c2ba408f36de900ec014e9d8c40d1adf78a
   specs:
     s3deployer (0.0.4)
       aws-s3
